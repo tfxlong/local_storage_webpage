@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Local Storage</title>   
+  </head>
+
+  <body onLoad = "bring_in_my_data()">
+    
+    <header>
+      <h1>Timothy Long</h1>     
+      <h2>S/N 7382923</h2>
+    </header>
+    
+    <main>
+
+      <p id="para1">This page is an example of how data is saved into local storage and automatically recalled.
+          <br>Each object square has its own identity, with three properties. 
+      </p>
+      <h2>Excercise 4 - Task 2</h2>
+
+      <section id="main_container">
+
+        <button class="squares" id="square_x1y1" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x2y1" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x3y1" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x4y1" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x5y1" onclick="colour_change(this.id)">0</button>
+        
+        <button class="squares" id="square_x1y2" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x2y2" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x3y2" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x4y2" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x5y2" onclick="colour_change(this.id)">0</button>
+
+        <button class="squares" id="square_x1y3" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x2y3" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x3y3" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x4y3" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x5y3" onclick="colour_change(this.id)">0</button>
+
+        <button class="squares" id="square_x1y4" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x2y4" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x3y4" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x4y4" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x5y4" onclick="colour_change(this.id)">0</button>
+
+        <button class="squares" id="square_x1y5" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x2y5" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x3y5" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x4y5" onclick="colour_change(this.id)">0</button>
+        <button class="squares" id="square_x5y5" onclick="colour_change(this.id)">0</button>
+
+
+      </section>         
+    </main>  
+    
+    <footer>
+        <button id="reset_button" onclick="reset_all()">RESET ALL SQUARES <br>+ LOCAL STORAGE</button>
+    </footer>
+  </body>
+</html>

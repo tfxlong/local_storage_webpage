@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {    
+    justify-content: center;  
+    margin-bottom: 25px;
+    padding-top: 25px;
+    color: rgb(133, 214, 181);   
+    box-shadow: lightgray 5px 5px 10px;
+    border-radius: 1%;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 45px;
+}
+
+#para1 {
+    font-weight: 600;
+    margin: 20px;
+}
+
+/* ################## MAIN SECTION ####################### */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items:center;   
+}
+
+main h2,
+main>p {
+    color: rgb(114, 114, 114);
+    margin-bottom: 20px;
+}
+
+#main_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;   
+    background-color: rgb(255, 248, 252);
+    width: 700px;
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 1%;
+}
+
+@keyframes pulse {
+    0% {box-shadow: rgb(0, 0, 0) 0px 0px 40px}
+    50% {box-shadow: rgb(182, 182, 182) 0px 0px 20px}
+    100% {box-shadow: rgb(0, 0, 0) 0px 0px 40px}
+  }
+
+
+
+/* ############# INFINITE SLIDING ANIMATION BUTTON ################ */
+
+footer {
+    margin: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+button {
+    background-color: black;
+
+    color: rgb(248, 244, 244);
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    margin: 20px;
+    font-weight: 600;
+    position: relative; 
+    box-shadow: rgb(78, 78, 78) 5px 5px 10px;   
+    justify-content: center;
+}
+
+button:hover {
+    transform: scale(1.05); 
+    box-shadow: rgb(78, 78, 78) 20px 20px 10px;
+    border: 2px solid black;
+    transition: 1s;
+}
+
+#reset_button {
+    color: rgb(160, 160, 160);
+    line-height: 1.5em;
+}
+
+#reset_button:hover {
+    color: white;
+}
